@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Practico de Javascript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Curso Práctico de Javascript</h1>
+        </header>
+        <section class="talleres">
+            <div class="taller active">
+                <h2>Taller #1 | Figuras Geométricas</h2>
+            </div>
+            <div class="taller">
+                <h2>Taller #2 | Precios y Descuentos</h2>
+            </div>
+            <div class="taller">
+                <h2>Taller #3 | Promedio, Moda y Mediana</h2>
+            </div>
+            <div class="taller">
+                <h2>Taller #4 | Analisis Salarial</h2>
+            </div>
+        </section>
+        <main>
+            <h3>Figuras Geométricas</h3>
+                <section class="taller1">
+                    <div class="taller1__form">
+                        <div class="taller1_title">
+                            <h3>Cuadrado</h3>
+                            <img src="./img/cuadrado.svg">
+                            <p id="resultadoCuadradoPerimetro"></p>
+                        </div>
+                        <h4>Calcule el perímetro o el area del cuadrado</h4>
+                        <form class="form">
+                            <input id="ladosCuadrados" type="number" placeholder="Ingrese lados (cm)" min="0">
+                            <button id="btn_cuadrado_perimetro" type="button">Perímetro</button>
+                            <button id="btn_cuadrado_area" type="button">Area</button>
+                        </form>
+                    </div>
+                    <div class="taller1__form">
+                        <div class="taller1_title">
+                            <h3>Triángulo</h3>  
+                            <img src="./img/triangle-equilatero.svg">    
+                            <p id="resultadoTrianguloCuadrado"></p>
+                        </div>
+                        <h4>Calcule el perímetro o el area del Triángulo</h4>
+                        <form class="form">
+                            <div class="form__triangle">
+                                <input id="lado1Triangulo" class="form__triangle--input" type="number" placeholder="lado 1" min="0">
+                                <input id="lado2Triangulo" class="form__triangle--input" type="number" placeholder="lado 2" min="0">
+                                <input id="baseTriangulo" class="form__triangle--input" type="number" placeholder="base" min="0">
+                                <input id="alturaTriangulo" class="form__triangle--input" type="number" placeholder="altura" min="0">
+                            </div>
+                            <button id="btn_triangulo_perimetro" type="button">Perímetro</button>
+                            <button id="btn_triangulo_area" type="button">Area</button>
+                        </form>
+                    </div>
+                    <div class="taller1__form">
+                        <div class="taller1_title">
+                            <h3>Círculo</h3>
+                            <img src="./img/circulo.svg">   
+                            <p id="resultadoTrianguloCuadrado"></p>
+                        </div>
+                        <h4>Calcule el perímetro o el area del cuadrado</h4>
+                        <form class="form">
+                            <input type="number">
+                            <button>Perímetro</button>
+                            <button>Area</button>
+                        </form>
+                    </div>
+                    <div class="taller1__form">
+                        <div class="taller1_title">
+                            <h3>Triángulo Equilátero</h3>
+                            <img src="./img/triangulo.svg">
+                            <p id="resultadoTrianguloCuadrado"></p>
+                        </div>
+                        <h4>Triángulo Equilátero</h4>
+                        <form class="form">
+                            <input type="number">
+                            <button>Perímetro</button>
+                            <button>Area</button>
+                        </form>
+                    </div>
+                </section>
+                <!-- <section class="taller2">
+    
+                </section>
+                <section class="taller3">
+    
+                </section>
+                <section class="taller4">
+    
+                </section> -->    
+        </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
