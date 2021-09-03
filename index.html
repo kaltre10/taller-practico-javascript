@@ -79,13 +79,15 @@
                         <div class="taller1_title">
                             <h3>Triángulo Equilátero</h3>
                             <img src="./img/triangulo.svg">
-                            <p id="resultadoTrianguloCuadrado"></p>
+                            <p id="resultadoIsosceles"></p>
                         </div>
-                        <h4>Triángulo Equilátero</h4>
+                        <h4>Triángulo Isósceles</h4>
                         <form class="form">
-                            <input type="number">
-                            <button>Perímetro</button>
-                            <button>Area</button>
+                            <div class="form__triangle">
+                                <input id="lado1TrianguloIsosceles" class="form__triangle--input" type="number" placeholder="lado 1" min="0">
+                                <input id="lado2TrianguloIsosceles" class="form__triangle--input" type="number" placeholder="lado 2" min="0">
+                            </div>
+                            <button id="btn_triangulo_isosceles" type="button">Altura</button>
                         </form>
                     </div>
                 </section>

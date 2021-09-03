@@ -57,11 +57,36 @@ function calcularCirculoArea(){
     });
 }
 
+function calcularAlturaIsosceles(){
+
+    let lado1 = document.getElementById('lado1TrianguloIsosceles');
+    let lado2 = document.getElementById('lado2TrianguloIsosceles');
+
+    document.getElementById('btn_triangulo_isosceles').addEventListener('click', () => {
+
+        if(validarIsosceles(lado1, lado2))
+            return;
+        document.getElementById('resultadoIsosceles').textContent = `
+            Altura: ${(Math.sqrt((Math.pow(Number(lado1.value), 2)) - Math.pow((Number(lado2.value) / 2), 2))).toFixed(2)} cm
+        `;
+    });
+}
+
+function validarIsosceles(lado1, lado2){
+    if(lado1.value != lado2.value){
+        document.getElementById('resultadoIsosceles').textContent = "No es un triangulo Isósceles";
+        return true;
+    }else{
+        return false;
+    }
+}
+
 export {
     calcularCuadradoPerimetro,
     calcularCuadradoArea,
     calcularTrianguloPerimero,
     calcularTrianguloArea,
     calcularCirculoPerimetro,
-    calcularCirculoArea
+    calcularCirculoArea,
+    calcularAlturaIsosceles
 }

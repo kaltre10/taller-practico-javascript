@@ -4,7 +4,8 @@ import {
     calcularTrianguloPerimero,
     calcularTrianguloArea,
     calcularCirculoPerimetro,
-    calcularCirculoArea
+    calcularCirculoArea,
+    calcularAlturaIsosceles
 } from './figuras-geometricas.js';
 
 window.addEventListener('load', () => {
@@ -20,5 +21,8 @@ window.addEventListener('load', () => {
     //Circulo
     calcularCirculoPerimetro();
     calcularCirculoArea();
+
+    //Triangulo Isosceles
+    calcularAlturaIsosceles();
 
 });
