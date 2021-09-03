@@ -2,7 +2,9 @@ import {
     calcularCuadradoPerimetro,
     calcularCuadradoArea,
     calcularTrianguloPerimero,
-    calcularTrianguloArea
+    calcularTrianguloArea,
+    calcularCirculoPerimetro,
+    calcularCirculoArea
 } from './figuras-geometricas.js';
 
 window.addEventListener('load', () => {
@@ -14,5 +16,9 @@ window.addEventListener('load', () => {
     //Triangulo
     calcularTrianguloPerimero();
     calcularTrianguloArea();
+
+    //Circulo
+    calcularCirculoPerimetro();
+    calcularCirculoArea();
 
 });

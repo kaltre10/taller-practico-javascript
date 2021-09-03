@@ -41,9 +41,27 @@ function calcularTrianguloArea(){
 
 }
 
+function calcularCirculoPerimetro(){
+    document.getElementById('btn_circulo_perimetro').addEventListener('click', () => {
+        document.getElementById('resultadoCirculo').textContent = `
+            Perimetro: ${((Number(document.getElementById('radioCirculo').value) * 2) * Math.PI).toFixed(2)}
+        `;
+    });
+}
+
+function calcularCirculoArea(){
+    document.getElementById('btn_circulo_Area').addEventListener('click', () => {
+        document.getElementById('resultadoCirculo').textContent = `
+            Area: ${(Math.pow(Number(document.getElementById('radioCirculo').value), 2) * Math.PI).toFixed(2)}
+        `;
+    });
+}
+
 export {
     calcularCuadradoPerimetro,
     calcularCuadradoArea,
     calcularTrianguloPerimero,
-    calcularTrianguloArea
+    calcularTrianguloArea,
+    calcularCirculoPerimetro,
+    calcularCirculoArea
 }
