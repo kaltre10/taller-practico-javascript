@@ -16,10 +16,10 @@
         </header>
         <section class="talleres">
             <div class="taller active">
-                <h2>Taller #1 | Figuras Geométricas</h2>
+                <h2 id="btn-taller1">Taller #1 | Figuras Geométricas</h2>
             </div>
             <div class="taller">
-                <h2>Taller #2 | Precios y Descuentos</h2>
+                <h2 id="btn-taller2">Taller #2 | Precios y Descuentos</h2>
             </div>
             <div class="taller">
                 <h2>Taller #3 | Promedio, Moda y Mediana</h2>
@@ -91,15 +91,29 @@
                         </form>
                     </div>
                 </section>
-                <!-- <section class="taller2">
-    
+                <section class="taller2">
+                    <div class="taller1__form">
+                        <div class="taller1_title">
+                            <h3>Calcular Descuento</h3>
+                            <img src="./img/descuento.svg">
+                            <p id="resultadoDescuento"></p>
+                        </div>
+                        
+                        <form class="form">
+                            <h4>Precio a pagar:</h4>
+                            <input id="precio" type="number" placeholder="Precio a pagar" autocomplete='off'>
+                            <h4>Porcentaje de descuento:</h4>
+                            <input id="porcentaje" type="number" placeholder="Porcentaje %" autocomplete='off'>
+                            <button id="btn_descuento" type="button">Calcular Descuento</button>
+                        </form>
+                    </div>
                 </section>
                 <section class="taller3">
     
                 </section>
                 <section class="taller4">
     
-                </section> -->    
+                </section> 
         </main>
     </div>
     <script type="module" src="js/main.js"></script>

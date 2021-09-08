@@ -81,6 +81,16 @@ function validarIsosceles(lado1, lado2){
     }
 }
 
+function showTaller1(){
+    //mostramos el div contenedor del taller1
+    document.querySelector('.taller1').style.display = 'flex';
+    document.querySelector('h3').textContent = 'Figuras Geométricas';
+
+    //quitamos y agregamos la clase active en el menu
+    document.querySelector('.active').classList.remove('active');
+    document.getElementById('btn-taller1').parentNode.classList.add('active');
+}
+
 export {
     calcularCuadradoPerimetro,
     calcularCuadradoArea,
@@ -88,5 +98,6 @@ export {
     calcularTrianguloArea,
     calcularCirculoPerimetro,
     calcularCirculoArea,
-    calcularAlturaIsosceles
+    calcularAlturaIsosceles,
+    showTaller1
 }
