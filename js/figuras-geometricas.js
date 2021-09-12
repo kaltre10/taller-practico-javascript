@@ -86,18 +86,29 @@ function showTaller1(){
     document.querySelector('.taller1').style.display = 'flex';
     document.querySelector('h3').textContent = 'Figuras Geométricas';
 
+    //ocultamos los div de los demas talleres
+    document.querySelector('.taller2').style.display = 'none';
+    document.querySelector('.taller3').style.display = 'none';
+    document.querySelector('.taller4').style.display = 'none';
+
     //quitamos y agregamos la clase active en el menu
     document.querySelector('.active').classList.remove('active');
     document.getElementById('btn-taller1').parentNode.classList.add('active');
+
+    //Cuadrado
+    calcularCuadradoPerimetro();
+    calcularCuadradoArea();
+
+    //Triangulo
+    calcularTrianguloPerimero();
+    calcularTrianguloArea();
+
+    //Circulo
+    calcularCirculoPerimetro();
+    calcularCirculoArea();
+
+    //Triangulo Isosceles
+    calcularAlturaIsosceles();
 }
 
-export {
-    calcularCuadradoPerimetro,
-    calcularCuadradoArea,
-    calcularTrianguloPerimero,
-    calcularTrianguloArea,
-    calcularCirculoPerimetro,
-    calcularCirculoArea,
-    calcularAlturaIsosceles,
-    showTaller1
-}
+export { showTaller1 }

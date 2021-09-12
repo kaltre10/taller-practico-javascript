@@ -1,6 +1,9 @@
 function showTaller2(){
-    //ocultamos el div contenedor del taller1
+    //ocultamos el div contenedor de los demas talleres
     document.querySelector('.taller1').style.display = 'none';
+    document.querySelector('.taller3').style.display = 'none';
+    document.querySelector('.taller4').style.display = 'none';
+
     document.querySelector('h3').textContent = 'Precios y descuentos';
 
     //quitamos y agregamos la clase active en el menu
@@ -9,6 +12,9 @@ function showTaller2(){
 
     //mostramos el div del taller2
     document.querySelector('.taller2').style.display = 'flex';
+
+    //calculando precios y descuentos
+    calcularDescuento();
 }
 
 function calcularDescuento(){
@@ -24,7 +30,4 @@ function calcularDescuento(){
     });
 }
 
-export {
-    showTaller2,
-    calcularDescuento
-}
+export { showTaller2 }

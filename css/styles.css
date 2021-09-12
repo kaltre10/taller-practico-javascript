@@ -62,7 +62,7 @@ h3{
     display: flex;
 }
 
-.taller1{
+.taller1, .taller2, .taller3{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -132,12 +132,15 @@ button:hover{
     padding: 30px 0px;
 }
 
-.form__triangle{
+.form__triangle, .btn_container_taller3{
     display: flex;
-    
 }
 
 .form__triangle--input{
     width: 100%;
     padding: 7px;
+}
+
+.btn_taller3{
+    width: 33.33%;
 }
